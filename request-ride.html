@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a Ride - FePo Ride</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">FePo Ride</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item mx-2">
+            <a class="nav-link text-dark" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-dark" href="login.html">Login</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-dark" href="register.html">Register</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="btn btn-primary-custom" href="request-ride.html"
+              >Request a Ride</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Ride Request Section -->
+  <section class="ride-section d-flex align-items-center justify-content-center">
+    <div class="ride-card shadow">
+      <h2 class="text-center mb-4">Request a Ride</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="pickup" class="form-label">Pickup Location</label>
+          <input
+            type="text"
+            class="form-control"
+            id="pickup"
+            placeholder="e.g. Half Assini Market"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="dropoff" class="form-label">Drop-off Location</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dropoff"
+            placeholder="e.g. Esiama Junction"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="payment" class="form-label">Payment Method</label>
+          <select class="form-select" id="payment" required>
+            <option value="" selected disabled>Select payment method</option>
+            <option value="cash">Cash</option>
+            <option value="momo">Mobile Money</option>
+            <option value="card">Debit/Credit Card</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary-custom w-100">
+          Submit Request
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+<script src="script/js/request-ride.js"></script>
+
+</html>

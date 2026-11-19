@@ -1,0 +1,130 @@
+/* style.css */
+
+/* Custom styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8fafc;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #2f855a !important; /* Green */
+}
+header.hero-section {
+  background: linear-gradient(
+      rgba(47, 133, 90, 0.8),
+      rgba(47, 133, 90, 0.8)
+    ),
+    url('../assets/images/j.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+header.hero-section .container {
+  max-width: 700px;
+}
+header.hero-section h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+header.hero-section p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+.btn-primary-custom {
+  background-color: #2f855a;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.btn-primary-custom:hover {
+  background-color: #276749;
+}
+.features-section {
+  padding: 4rem 0;
+}
+.feature-icon {
+  font-size: 3.5rem;
+  color: #2f855a;
+  margin-bottom: 1rem;
+}
+footer {
+  background-color: #1a202c;
+  color: #a0aec0;
+  padding: 1.5rem 0;
+}
+footer a {
+  color: #a0aec0;
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #2f855a;
+}
+/* Login page styles */
+.login-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../assets/images/t.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding-top: 80px; /* navbar space */
+}
+
+.login-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 420px;
+}
+/* Register page styles */
+.register-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../assets/images/ha.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding-top: 80px; /* navbar space */
+}
+
+.register-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+/* Ride request page styles */
+.ride-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('../assets/images/ha.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.ride-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 550px;
+}
+table th, table td {
+  vertical-align: middle;
+  text-align: center;
+}
